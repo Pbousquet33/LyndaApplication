@@ -1,15 +1,20 @@
 <h1>Demo#hello</h1>
 
-<p>Hello from the index Page!</p>
+<p>Hello World!</p>
 
-<%= 1 + 1 %>
+ID: <%= @id %><br />
+Next page: <%= @page + 1 %><br />
 
 <% target = "world" %>
 
-<%= "hello #{target}" %>
+<%= "Hello #{target}" %>
 
 <% @array.each do |n| %>
-	<%= n %><br />
+  <%= n %><br />
 <% end %>
 
-<%= link_to("My First Link", {:action => 'index'})%>
+<%= link_to("My first link", {:action => 'index'}) %>
+
+<hr />
+
+<%= params.inspect %>
