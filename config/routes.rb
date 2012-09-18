@@ -1,6 +1,6 @@
 SimpleCms::Application.routes.draw do
   
-  root :to => "demo#index"
+  root :to => "access#login"
   
   # get "demo/index"
 
